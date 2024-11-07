@@ -1,0 +1,24 @@
+A compilação é feita a partir do GNU C Compiler (GCC). Para isso é preciso que o GCC esteja instalado em sua máquina.
+
+Para verificar se o GCC está instalado, utilize o comando:
+
+  gcc --version
+
+Caso não esteja instalado, utilize o gerenciador de pacotes da sua distribuição Linux e procure pelo pacote do GCC.
+
+  Debian-based:
+    sudo apt install build-essential
+
+  Fedora-based:
+    sudo dnf install make gcc gcc-c++
+
+  Arch-based
+    sudo pacman -S gcc
+  
+
+Uma vez instalado, estando na pasta do arquivo fonte, basta utilizar o seguinte comando no terminal:
+
+  gcc -o [nome_executavel] main.c && ./[nome_executavel]
+
+Não esqueça de substituir [nome_executavel] pelo nome que preferir que o arquivo executável tenha.
+A biblioteca structs.h e o arquivo.txt devem estar na mesma pasta do arquivo fonte.
